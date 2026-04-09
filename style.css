@@ -1,0 +1,175 @@
+/* PREMIUM FINTECH STYLE */
+
+body{
+margin:0;
+font-family:Segoe UI, sans-serif;
+background:linear-gradient(180deg,#020617,#0f172a);
+color:#e2e8f0;
+}
+
+/* NAVBAR */
+
+.nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 40px;
+background:rgba(2,6,23,0.9);
+position:sticky;
+top:0;
+z-index:1000;
+border-bottom:1px solid rgba(255,255,255,0.05);
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:10px;
+}
+
+.logo img{
+height:42px;
+}
+
+.logo span{
+font-size:20px;
+font-weight:600;
+color:#38bdf8;
+}
+
+.menu a{
+margin-left:30px;
+text-decoration:none;
+color:#94a3b8;
+font-weight:500;
+transition:0.3s;
+position:relative;
+}
+
+.menu a:hover{
+color:#38bdf8;
+}
+
+.menu a::after{
+content:"";
+position:absolute;
+width:0;
+height:2px;
+bottom:-5px;
+left:0;
+background:#38bdf8;
+transition:.3s;
+}
+
+.menu a:hover::after{
+width:100%;
+}
+
+/* HERO */
+
+header{
+padding:140px 20px;
+text-align:center;
+background:radial-gradient(circle at top,#1e3a8a,#020617);
+}
+
+.hero h1{
+font-size:48px;
+margin-bottom:15px;
+}
+
+.hero p{
+color:#94a3b8;
+font-size:18px;
+}
+
+/* BUTTON */
+
+button{
+background:linear-gradient(90deg,#38bdf8,#6366f1);
+border:none;
+padding:14px 22px;
+border-radius:8px;
+color:white;
+font-size:16px;
+cursor:pointer;
+transition:0.2s;
+}
+
+button:hover{
+transform:translateY(-2px);
+box-shadow:0 8px 20px rgba(56,189,248,0.4);
+}
+
+button:active{
+transform:scale(.95);
+}
+
+/* CONTENT */
+
+.container{
+max-width:1100px;
+margin:auto;
+padding:60px 20px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
+}
+
+.card{
+background:rgba(30,41,59,.6);
+padding:25px;
+border-radius:14px;
+border:1px solid rgba(255,255,255,.05);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-7px);
+border:1px solid rgba(56,189,248,.5);
+box-shadow:0 10px 25px rgba(0,0,0,.4);
+}
+
+img{
+width:100%;
+border-radius:10px;
+margin-top:15px;
+}
+
+/* CONTACT */
+
+input,textarea{
+width:100%;
+padding:12px;
+margin-bottom:15px;
+border-radius:8px;
+border:1px solid rgba(255,255,255,.08);
+background:#020617;
+color:white;
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:30px;
+background:#020617;
+border-top:1px solid rgba(255,255,255,.05);
+color:#94a3b8;
+}
+
+/* ANIMATION */
+
+.fade{
+opacity:0;
+transform:translateY(30px);
+transition:.6s;
+}
+
+.fade.show{
+opacity:1;
+transform:translateY(0);
+}
