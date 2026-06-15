@@ -1,109 +1,135 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-E32NQWVJEC"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-E32NQWVJEC"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-E32NQWVJEC');
+  </script>
 
-  gtag('config', 'G-E32NQWVJEC');
-</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore the world's major financial markets — stocks, forex, crypto, and commodities. 4 in-depth modules on TradeLearn.">
+  <meta property="og:title" content="Financial Markets — TradeLearn">
+  <meta property="og:description" content="4 modules covering stocks, forex, cryptocurrency, and commodities for beginner traders.">
+  <meta property="og:type" content="website">
 
-<title>Markets</title>
-
-<link rel="stylesheet" href="style.css">
-
+  <title>Financial Markets — TradeLearn</title>
+  <link rel="icon" href="logo.png">
+  <link rel="stylesheet" href="style.css">
 </head>
+<body data-section="markets">
 
-<body>
-
+<!-- NAV -->
 <nav class="nav">
+  <a href="index.html" class="logo">
+    <img src="logo.png" alt="TradeLearn logo">
+    <div class="logo-text">
+      <span>TradeLearn</span>
+      <small>by Sidharth Praveen</small>
+    </div>
+  </a>
 
-<div class="logo">
+  <div class="menu">
+    <a href="index.html">Home</a>
+    <a href="markets.html">Markets</a>
+    <a href="basics.html">Basics</a>
+    <a href="strategies.html">Strategies</a>
+    <a href="contact.html">Contact</a>
+  </div>
 
-<img src="logo.png">
-<span>TradeLearn</span>
-
-</div>
-
-<div class="menu">
-
-<a href="index.html">Home</a>
-<a href="markets.html">Markets</a>
-<a href="basics.html">Basics</a>
-<a href="strategies.html">Strategies</a>
-<a href="contact.html">Contact</a>
-
-</div>
-
+  <button class="hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
 </nav>
 
-<header>
+<nav class="mobile-menu" id="mobile-menu">
+  <a href="index.html">Home</a>
+  <a href="markets.html">Markets</a>
+  <a href="basics.html">Basics</a>
+  <a href="strategies.html">Strategies</a>
+  <a href="contact.html">Contact</a>
+</nav>
 
-<h1>Financial Markets</h1>
-
-</header>
-
-<div class="container">
-
-<div class="cards">
-
-<div class="card fade">
-
-<h3>Stock Market</h3>
-
-<p>Buy and sell company shares.</p>
-
-<img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3">
-
+<!-- PAGE HEADER -->
+<div class="page-header">
+  <h1>Financial Markets</h1>
+  <p>Four modules covering every major market you'll encounter as a trader.</p>
 </div>
 
-<div class="card fade">
+<!-- CONTENT -->
+<div class="section-overview fade show">
 
-<h3>Forex</h3>
+  <div class="section-banner banner-markets">
+    <span>🌐</span>
+  </div>
 
-<p>Trade currencies globally.</p>
+  <div class="section-progress-card">
+    <div class="progress-label">
+      <span>Your progress</span>
+      <span id="section-progress-label">0 of 4 modules complete</span>
+    </div>
+    <div class="progress-bar">
+      <div class="progress-fill" id="section-progress-fill"></div>
+    </div>
+  </div>
 
-<img src="https://images.unsplash.com/photo-1621761191319-c6fb62004040">
+  <div class="module-list">
 
-</div>
+    <a class="module-card" href="modules/markets-1.html" data-module-card="markets-1">
+      <div class="module-num">1</div>
+      <div class="module-card-body">
+        <div class="module-card-title">The Stock Market</div>
+        <div class="module-card-desc">Learn how company shares are bought and sold, what stock indices measure, and how market capitalisation works.</div>
+      </div>
+      <div class="module-check">✓</div>
+    </a>
 
-<div class="card fade">
+    <a class="module-card" href="modules/markets-2.html" data-module-card="markets-2">
+      <div class="module-num">2</div>
+      <div class="module-card-body">
+        <div class="module-card-title">Forex — Foreign Exchange</div>
+        <div class="module-card-desc">The world's largest market. Understand currency pairs, pips, leverage, and what moves exchange rates.</div>
+      </div>
+      <div class="module-check">✓</div>
+    </a>
 
-<h3>Crypto</h3>
+    <a class="module-card" href="modules/markets-3.html" data-module-card="markets-3">
+      <div class="module-num">3</div>
+      <div class="module-card-body">
+        <div class="module-card-title">Cryptocurrency</div>
+        <div class="module-card-desc">From blockchain fundamentals to Bitcoin, altcoins, and why crypto is the most volatile market in the world.</div>
+      </div>
+      <div class="module-check">✓</div>
+    </a>
 
-<p>Trade digital currencies.</p>
+    <a class="module-card" href="modules/markets-4.html" data-module-card="markets-4">
+      <div class="module-num">4</div>
+      <div class="module-card-body">
+        <div class="module-card-title">Commodities &amp; Gold</div>
+        <div class="module-card-desc">Understand hard and soft commodities, why gold is the world's safe-haven asset, and how futures contracts work.</div>
+      </div>
+      <div class="module-check">✓</div>
+    </a>
 
-<img src="https://images.unsplash.com/photo-1621768216002-5ac171876625">
-
-</div>
-
-<div class="card fade">
-
-<h3>Gold & Commodities</h3>
-
-<p>Trade gold, oil and metals.</p>
-
-<img src="https://images.unsplash.com/photo-1610374792793-f016b77ca51a">
-
-</div>
-
-</div>
+  </div>
 
 </div>
 
 <footer>
-
-Financial Markets Overview
-
+  TradeLearn &bull; <a href="index.html">Home</a> &bull; <a href="contact.html">Contact</a><br>
+  Created by Sidharth Praveen
 </footer>
 
 <script src="script.js"></script>
-
+<script src="js/progress.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    applyModuleCardState();
+  });
+</script>
 </body>
-
 </html>

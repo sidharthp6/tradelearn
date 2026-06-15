@@ -1,202 +1,195 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-E32NQWVJEC"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-E32NQWVJEC"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-E32NQWVJEC');
+  </script>
 
-  gtag('config', 'G-E32NQWVJEC');
-</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TradeLearn — an interactive platform for learning trading and financial markets. Structured modules, quizzes, and progress tracking for beginner traders.">
+  <meta property="og:title" content="TradeLearn — Learn Trading & Financial Markets">
+  <meta property="og:description" content="Interactive trading education with structured modules, quizzes, and progress tracking. Covers stocks, forex, crypto, commodities, and strategies.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://sidharthp6.github.io/tradelearn/">
 
-<title>TradeLearn</title>
-
-<link rel="stylesheet" href="style.css">
-
+  <title>TradeLearn — Learn Trading &amp; Financial Markets</title>
+  <link rel="icon" href="logo.png">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
+<!-- NAV -->
 <nav class="nav">
+  <a href="index.html" class="logo">
+    <img src="logo.png" alt="TradeLearn logo">
+    <div class="logo-text">
+      <span>TradeLearn</span>
+      <small>by Sidharth Praveen</small>
+    </div>
+  </a>
 
-<div class="logo">
+  <div class="menu">
+    <a href="index.html">Home</a>
+    <a href="markets.html">Markets</a>
+    <a href="basics.html">Basics</a>
+    <a href="strategies.html">Strategies</a>
+    <a href="contact.html">Contact</a>
+  </div>
 
-<img src="logo.png">
-
-<div>
-<span>TradeLearn</span>
-<br>
-<small style="color:#64748b;font-size:12px;">
-by Sidharth Praveen
-</small>
-</div>
-
-</div>
-
-<div class="menu">
-
-<a href="index.html">Home</a>
-<a href="markets.html">Markets</a>
-<a href="basics.html">Basics</a>
-<a href="strategies.html">Strategies</a>
-<a href="contact.html">Contact</a>
-
-</div>
-
+  <button class="hamburger" id="hamburger" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
 </nav>
 
+<nav class="mobile-menu" id="mobile-menu">
+  <a href="index.html">Home</a>
+  <a href="markets.html">Markets</a>
+  <a href="basics.html">Basics</a>
+  <a href="strategies.html">Strategies</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<!-- HERO -->
 <header>
-
-<div class="hero">
-
-<h1>
-
-Trading & Financial Markets Basics
-
-</h1>
-
-<p>
-
-Learn how financial markets work including stocks, crypto, forex and commodities.
-
-</p>
-
-<br>
-
-<button onclick="location.href='basics.html'">
-
-Start Learning
-
-</button>
-
-<button onclick="location.href='markets.html'" style="margin-left:10px;background:transparent;border:1px solid #38bdf8">
-
-Explore Markets
-
-</button>
-
-</div>
-
+  <div class="hero">
+    <h1>Learn Trading &amp;<br>Financial Markets</h1>
+    <p>10 structured modules covering stocks, forex, crypto, commodities, and trading strategies — built for absolute beginners.</p>
+    <div class="hero-btns">
+      <a class="btn" href="basics.html">Start the Course</a>
+      <a class="btn btn-outline" href="markets.html">Explore Markets</a>
+    </div>
+  </div>
 </header>
 
+<!-- MAIN CONTENT -->
 <div class="container">
 
-<h2 class="fade">
+  <!-- PROGRESS DASHBOARD -->
+  <div class="dashboard-section fade">
+    <div class="dashboard-header">
+      <h2 class="dashboard-title">Your Progress</h2>
+      <button class="btn btn-ghost btn-sm" onclick="handleReset()">Reset Progress</button>
+    </div>
 
-What You Will Learn
+    <div class="progress-label">
+      <span>Overall completion</span>
+      <span id="overall-pct">0%</span>
+    </div>
+    <div class="progress-bar">
+      <div class="progress-fill" id="overall-progress-fill"></div>
+    </div>
 
-</h2>
+    <div class="dashboard-stats">
+      <div class="stat-box">
+        <span class="stat-num" id="modules-completed">0</span>
+        <span class="stat-label">Modules Done</span>
+      </div>
+      <div class="stat-box">
+        <span class="stat-num" id="modules-total">10</span>
+        <span class="stat-label">Total Modules</span>
+      </div>
+      <div class="stat-box">
+        <span class="stat-num" id="quizzes-completed">0</span>
+        <span class="stat-label">Quizzes Taken</span>
+      </div>
+    </div>
+  </div>
 
-<div class="cards">
+  <!-- COURSE SECTIONS -->
+  <h2 class="section-title fade">The Course</h2>
+  <p class="section-sub fade">Three sections, 10 modules. Work through them in order or jump to what interests you.</p>
 
-<div class="card fade">
+  <div class="cards">
 
-<h3>Stock Market</h3>
+    <a class="card fade" href="basics.html" data-section-card="basics" style="text-decoration:none;color:inherit;">
+      <span class="card-icon">📈</span>
+      <h3>Trading Basics</h3>
+      <p>3 modules covering what trading is, how markets function, and the risk management principles every trader needs.</p>
+      <div style="margin-top:14px;font-size:12px;color:var(--accent);" class="section-done-count">0/3</div>
+    </a>
 
-<p>
+    <a class="card fade" href="markets.html" data-section-card="markets" style="text-decoration:none;color:inherit;">
+      <span class="card-icon">🌐</span>
+      <h3>Financial Markets</h3>
+      <p>4 modules exploring stocks, forex, cryptocurrency, and commodities — the major arenas where traders operate.</p>
+      <div style="margin-top:14px;font-size:12px;color:var(--accent);" class="section-done-count">0/4</div>
+    </a>
 
-Understand how company shares are traded.
+    <a class="card fade" href="strategies.html" data-section-card="strategies" style="text-decoration:none;color:inherit;">
+      <span class="card-icon">🧠</span>
+      <h3>Trading Strategies</h3>
+      <p>3 modules covering long-term investing, day trading, and swing trading — find the style that suits you.</p>
+      <div style="margin-top:14px;font-size:12px;color:var(--accent);" class="section-done-count">0/3</div>
+    </a>
 
-</p>
+  </div>
+
+  <hr class="divider">
+
+  <!-- WHAT YOU'LL LEARN TEASERS -->
+  <h2 class="section-title fade">What You Will Learn</h2>
+  <p class="section-sub fade">Key concepts covered across the full course.</p>
+
+  <div class="cards">
+    <div class="card fade">
+      <span class="card-icon">💹</span>
+      <h3>How Prices Move</h3>
+      <p>Understand supply and demand, order books, bid-ask spreads, and the forces that drive price in every market.</p>
+    </div>
+    <div class="card fade">
+      <span class="card-icon">🛡️</span>
+      <h3>Risk Management</h3>
+      <p>Learn position sizing, stop-losses, and risk/reward ratios — the skills that separate profitable traders from gamblers.</p>
+    </div>
+    <div class="card fade">
+      <span class="card-icon">📊</span>
+      <h3>Market Structure</h3>
+      <p>Identify trends, support and resistance levels, and the recurring patterns that appear across all timeframes and markets.</p>
+    </div>
+    <div class="card fade">
+      <span class="card-icon">⚖️</span>
+      <h3>Choosing a Strategy</h3>
+      <p>Compare long-term investing, day trading, and swing trading — and understand which matches your personality and schedule.</p>
+    </div>
+    <div class="card fade">
+      <span class="card-icon">🔗</span>
+      <h3>Blockchain &amp; Crypto</h3>
+      <p>Understand what cryptocurrency actually is, how blockchain works, and why crypto is the most volatile market in the world.</p>
+    </div>
+    <div class="card fade">
+      <span class="card-icon">🥇</span>
+      <h3>Gold &amp; Commodities</h3>
+      <p>Discover why gold is a safe-haven asset, how futures contracts work, and the role commodities play in a diversified portfolio.</p>
+    </div>
+  </div>
 
 </div>
 
-<div class="card fade">
-
-<h3>Cryptocurrency</h3>
-
-<p>
-
-Learn basics of Bitcoin and digital assets.
-
-</p>
-
-</div>
-
-<div class="card fade">
-
-<h3>Forex</h3>
-
-<p>
-
-Understand global currency trading.
-
-</p>
-
-</div>
-
-</div>
-
-<br>
-
-<h2 class="fade">
-
-Core Trading Concepts
-
-</h2>
-
-<div class="cards">
-
-<div class="card fade">
-
-<h3>Volatility</h3>
-
-<p>
-
-Market prices change continuously creating opportunities.
-
-</p>
-
-</div>
-
-<div class="card fade">
-
-<h3>Risk Management</h3>
-
-<p>
-
-Protect capital and control losses effectively.
-
-</p>
-
-</div>
-
-<div class="card fade">
-
-<h3>Market Trends</h3>
-
-<p>
-
-Identify upward and downward market movements.
-
-</p>
-
-</div>
-
-</div>
-
-<br>
-
-<img class="fade" src="https://images.unsplash.com/photo-1640340434855-6084b1f4901c">
-
-</div>
-
+<!-- FOOTER -->
 <footer>
-
-TradeLearn • Financial Markets Learning Project
-
-<br>
-
-Created by Sidharth Praveen
-
+  TradeLearn &bull; Interactive Trading Learning Platform<br>
+  Created by <a href="contact.html">Sidharth Praveen</a>
 </footer>
 
 <script src="script.js"></script>
+<script src="js/progress.js"></script>
+<script>
+  function handleReset() {
+    if (confirm('Reset all progress? This cannot be undone.')) {
+      resetProgress();
+      location.reload();
+    }
+  }
 
+  document.addEventListener('DOMContentLoaded', () => {
+    renderHomepageDashboard();
+  });
+</script>
 </body>
-
 </html>

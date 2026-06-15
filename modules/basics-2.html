@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-E32NQWVJEC"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-E32NQWVJEC');
+  </script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover how exchanges work, what drives prices, and how buyers and sellers interact in financial markets.">
+  <meta property="og:title" content="How Markets Work — TradeLearn">
+  <meta property="og:description" content="Module 2 of 3 in Trading Basics. Learn about exchanges, order books, the bid-ask spread, and price drivers.">
+  <meta property="og:type" content="website">
+
+  <title>How Markets Work — TradeLearn</title>
+  <link rel="icon" href="../logo.png">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body data-active-nav="basics.html">
+
+<nav class="nav">
+  <a href="../index.html" class="logo">
+    <img src="../logo.png" alt="TradeLearn logo">
+    <div class="logo-text"><span>TradeLearn</span><small>by Sidharth Praveen</small></div>
+  </a>
+  <div class="menu">
+    <a href="../index.html">Home</a>
+    <a href="../markets.html">Markets</a>
+    <a href="../basics.html">Basics</a>
+    <a href="../strategies.html">Strategies</a>
+    <a href="../contact.html">Contact</a>
+  </div>
+  <button class="hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<nav class="mobile-menu" id="mobile-menu">
+  <a href="../index.html">Home</a>
+  <a href="../markets.html">Markets</a>
+  <a href="../basics.html">Basics</a>
+  <a href="../strategies.html">Strategies</a>
+  <a href="../contact.html">Contact</a>
+</nav>
+
+<div class="page-layout">
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-section">
+      <span class="sidebar-section-label">Basics</span>
+      <a class="sidebar-link" href="basics-1.html" data-module="basics-1"><span class="mod-status"></span>What is Trading?</a>
+      <a class="sidebar-link active" href="basics-2.html" data-module="basics-2"><span class="mod-status"></span>How Markets Work</a>
+      <a class="sidebar-link" href="basics-3.html" data-module="basics-3"><span class="mod-status"></span>Risk Management</a>
+    </div>
+    <div class="sidebar-section">
+      <span class="sidebar-section-label">Markets</span>
+      <a class="sidebar-link" href="markets-1.html" data-module="markets-1"><span class="mod-status"></span>The Stock Market</a>
+      <a class="sidebar-link" href="markets-2.html" data-module="markets-2"><span class="mod-status"></span>Forex</a>
+      <a class="sidebar-link" href="markets-3.html" data-module="markets-3"><span class="mod-status"></span>Cryptocurrency</a>
+      <a class="sidebar-link" href="markets-4.html" data-module="markets-4"><span class="mod-status"></span>Commodities &amp; Gold</a>
+    </div>
+    <div class="sidebar-section">
+      <span class="sidebar-section-label">Strategies</span>
+      <a class="sidebar-link" href="strategies-1.html" data-module="strategies-1"><span class="mod-status"></span>Long-Term Investing</a>
+      <a class="sidebar-link" href="strategies-2.html" data-module="strategies-2"><span class="mod-status"></span>Day Trading</a>
+      <a class="sidebar-link" href="strategies-3.html" data-module="strategies-3"><span class="mod-status"></span>Swing Trading</a>
+    </div>
+  </aside>
+  <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+  <main class="module-content">
+    <div class="module-meta">Basics &rsaquo; <span class="accent">Module 2 of 3</span></div>
+    <h1 class="module-title">How Markets Work</h1>
+    <p class="module-intro">Financial markets aren't magic — they're organised systems where buyers and sellers meet, agree on prices, and exchange assets. Understanding how this machinery works gives you a huge edge over traders who treat price movements as random noise.</p>
+
+    <div class="content-section">
+      <h2>What is a Financial Market?</h2>
+      <p>A financial market is any organised place or system where people can buy and sell financial assets. Markets exist to serve three crucial functions:</p>
+      <ul>
+        <li><strong>Price discovery:</strong> Markets aggregate the opinions of millions of buyers and sellers to produce a "fair" price at any given moment.</li>
+        <li><strong>Liquidity:</strong> Markets ensure you can buy or sell an asset quickly without dramatically moving its price.</li>
+        <li><strong>Capital allocation:</strong> Money flows to the companies and projects people believe will generate the best returns.</li>
+      </ul>
+      <p>Markets can be physical (the trading floor of the NYSE) or electronic (the vast majority of trading today happens via computer networks with no human floor traders involved).</p>
+    </div>
+
+    <div class="content-section">
+      <h2>Exchanges and Brokers</h2>
+      <p>You don't trade directly on an exchange as a retail trader — you go through a <strong>broker</strong>. Here's how the chain works:</p>
+      <ol style="color:#cbd5e1;line-height:1.8;padding-left:20px;">
+        <li>You place an order through your broker's platform (app or website).</li>
+        <li>Your broker routes that order to the appropriate exchange or market maker.</li>
+        <li>The exchange's <strong>order book</strong> matches your order with someone on the other side.</li>
+        <li>The trade executes and both parties exchange the asset and money.</li>
+      </ol>
+
+      <div class="key-term">
+        <strong>Key Term: Order Book</strong>
+        <p>A real-time, electronic list of all outstanding buy orders (bids) and sell orders (asks) for a particular asset, organised by price. The exchange's matching engine pairs up buyers and sellers automatically.</p>
+      </div>
+    </div>
+
+    <div class="content-section">
+      <h2>The Bid-Ask Spread</h2>
+      <p>Every asset has two prices at any moment — the <strong>bid</strong> and the <strong>ask</strong>:</p>
+      <ul>
+        <li><strong>Bid price:</strong> the highest price a buyer is currently willing to pay.</li>
+        <li><strong>Ask price:</strong> the lowest price a seller is currently willing to accept.</li>
+        <li><strong>Spread:</strong> the difference between ask and bid. This is the cost of trading.</li>
+      </ul>
+
+      <div class="example-box">
+        <strong>Example — Reading the Spread</strong>
+        <p>A stock shows: Bid $49.96 / Ask $50.02. The spread is $0.06. If you buy at $50.02 (the ask) and immediately sell at $49.96 (the bid), you instantly lose $0.06 per share. You need the price to move more than the spread just to break even — which is why reducing trading costs matters so much.</p>
+      </div>
+
+      <p>Liquid assets (heavily traded, like Apple stock or EUR/USD) have very tight spreads. Illiquid assets (small-cap stocks, exotic currency pairs) have wider spreads that eat into your profits.</p>
+    </div>
+
+    <div class="content-section">
+      <h2>What Actually Moves Prices?</h2>
+      <p>Price is determined by supply and demand. When more people want to buy than sell, price rises. When more want to sell than buy, price falls. But what drives those buying and selling decisions?</p>
+
+      <h3>Fundamental Factors</h3>
+      <p>For stocks: company earnings, revenue growth, profit margins, new products, management changes. For currencies: interest rates, inflation, GDP growth. For commodities: weather, supply disruptions, geopolitical events.</p>
+
+      <h3>Macroeconomic Data</h3>
+      <p>Reports like US Non-Farm Payrolls, CPI (inflation), and central bank interest rate decisions can cause massive, sudden price moves across multiple markets simultaneously.</p>
+
+      <h3>Sentiment and Speculation</h3>
+      <p>Markets are also driven by human psychology — fear and greed. News, social media, and analyst opinions can move prices dramatically, sometimes regardless of fundamentals. The 2021 GameStop short squeeze is a famous example: retail traders on Reddit drove a struggling company's stock up 1,700% in a month.</p>
+
+      <div class="tip-box">
+        <strong>Tip: Don't Fight the Market</strong>
+        <p>Many beginners lose money by trading against the current trend because they believe the price "must" turn around. Markets can remain irrational longer than you can remain solvent. Always trade with the current market direction, not against it.</p>
+      </div>
+    </div>
+
+    <!-- QUIZ -->
+    <div id="quiz-container"></div>
+
+    <nav class="module-nav">
+      <a class="nav-btn nav-prev" href="basics-1.html">
+        <span class="nav-btn-label">Previous</span>
+        ← What is Trading?
+      </a>
+      <a class="nav-btn nav-next" href="basics-3.html">
+        <span class="nav-btn-label">Next Module</span>
+        Risk Management →
+      </a>
+    </nav>
+  </main>
+</div>
+
+<button class="sidebar-toggle" id="sidebar-toggle">☰</button>
+
+<footer>
+  TradeLearn &bull; <a href="../index.html">Home</a> &bull; <a href="../basics.html">Back to Basics</a><br>
+  Created by Sidharth Praveen
+</footer>
+
+<script src="../script.js"></script>
+<script src="../js/progress.js"></script>
+<script src="../js/quiz.js"></script>
+<script>
+const QUIZ = [
+  {
+    question: "What is the primary role of a stock exchange?",
+    options: [
+      "To lend money to companies that need funding",
+      "To provide an organised marketplace where buyers and sellers trade assets",
+      "To set the official price of every asset each day",
+      "To manage investors' portfolios on their behalf"
+    ],
+    correct: 1,
+    explanation: "Exchanges provide an organised, regulated marketplace where buyers and sellers can find each other and trade assets at agreed prices. They don't set prices — supply and demand does."
+  },
+  {
+    question: "If a stock has a bid of $99.95 and an ask of $100.05, what is the spread?",
+    options: [
+      "$0.05",
+      "$99.95",
+      "$0.10",
+      "$100.00"
+    ],
+    correct: 2,
+    explanation: "The spread = ask − bid = $100.05 − $99.95 = $0.10. This is the immediate cost you pay when entering a trade — you must buy at the ask and can only sell at the bid."
+  },
+  {
+    question: "What happens to an asset's price when selling pressure exceeds buying pressure?",
+    options: [
+      "The price rises as sellers compete",
+      "The price falls as there are more sellers than buyers",
+      "The price stays the same until a buyer steps in",
+      "The exchange halts trading automatically"
+    ],
+    correct: 1,
+    explanation: "Price is set by supply and demand. More sellers than buyers means sellers must lower their ask price to find a buyer, driving the price down."
+  },
+  {
+    question: "What is an 'order book'?",
+    options: [
+      "A record of all completed trades in history",
+      "A list of all brokers authorised to trade on an exchange",
+      "A real-time list of outstanding buy and sell orders organised by price",
+      "A book published by the exchange showing market rules"
+    ],
+    correct: 2,
+    explanation: "The order book is a real-time, dynamic list of all pending buy orders (bids) and sell orders (asks) at various price levels. The exchange's matching engine uses it to pair buyers and sellers."
+  }
+];
+
+document.addEventListener('DOMContentLoaded', () => {
+  applySidebarState();
+  initQuiz(QUIZ, 'basics-2');
+});
+</script>
+</body>
+</html>

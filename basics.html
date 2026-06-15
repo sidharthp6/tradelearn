@@ -1,95 +1,129 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-E32NQWVJEC"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-E32NQWVJEC"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-E32NQWVJEC');
+  </script>
 
-  gtag('config', 'G-E32NQWVJEC');
-</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn trading basics — what trading is, how markets work, and how to manage risk. 3 beginner-friendly modules on TradeLearn.">
+  <meta property="og:title" content="Trading Basics — TradeLearn">
+  <meta property="og:description" content="3 beginner-friendly modules covering the fundamentals of trading and financial markets.">
+  <meta property="og:type" content="website">
 
-<title>Trading Basics</title>
-
-<link rel="stylesheet" href="style.css">
-
+  <title>Trading Basics — TradeLearn</title>
+  <link rel="icon" href="logo.png">
+  <link rel="stylesheet" href="style.css">
 </head>
+<body data-section="basics">
 
-<body>
-
+<!-- NAV -->
 <nav class="nav">
+  <a href="index.html" class="logo">
+    <img src="logo.png" alt="TradeLearn logo">
+    <div class="logo-text">
+      <span>TradeLearn</span>
+      <small>by Sidharth Praveen</small>
+    </div>
+  </a>
 
-<div class="logo">
+  <div class="menu">
+    <a href="index.html">Home</a>
+    <a href="markets.html">Markets</a>
+    <a href="basics.html">Basics</a>
+    <a href="strategies.html">Strategies</a>
+    <a href="contact.html">Contact</a>
+  </div>
 
-<img src="logo.png">
-<span>TradeLearn</span>
-
-</div>
-
-<div class="menu">
-
-<a href="index.html">Home</a>
-<a href="markets.html">Markets</a>
-<a href="basics.html">Basics</a>
-<a href="strategies.html">Strategies</a>
-<a href="contact.html">Contact</a>
-
-</div>
-
+  <button class="hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
 </nav>
 
-<header>
+<nav class="mobile-menu" id="mobile-menu">
+  <a href="index.html">Home</a>
+  <a href="markets.html">Markets</a>
+  <a href="basics.html">Basics</a>
+  <a href="strategies.html">Strategies</a>
+  <a href="contact.html">Contact</a>
+</nav>
 
-<h1>Trading Basics</h1>
-
-</header>
-
-<div class="container">
-
-<div class="cards">
-
-<div class="card fade">
-
-<h3>What is Trading?</h3>
-
-<p>Buying and selling financial assets.</p>
-
+<!-- PAGE HEADER -->
+<div class="page-header">
+  <h1>Trading Basics</h1>
+  <p>Start here. Three modules that build your foundation from zero to confident beginner.</p>
 </div>
 
-<div class="card fade">
+<!-- CONTENT -->
+<div class="section-overview fade show">
 
-<h3>Volatility</h3>
+  <!-- CSS Banner -->
+  <div class="section-banner banner-basics">
+    <span>📈</span>
+  </div>
 
-<p>Price fluctuations in market.</p>
+  <!-- Section progress -->
+  <div class="section-progress-card">
+    <div class="progress-label">
+      <span>Your progress</span>
+      <span id="section-progress-label">0 of 3 modules complete</span>
+    </div>
+    <div class="progress-bar">
+      <div class="progress-fill" id="section-progress-fill"></div>
+    </div>
+  </div>
 
-</div>
+  <!-- Module list -->
+  <div class="module-list">
 
-<div class="card fade">
+    <a class="module-card" href="modules/basics-1.html" data-module-card="basics-1">
+      <div class="module-num">1</div>
+      <div class="module-card-body">
+        <div class="module-card-title">What is Trading?</div>
+        <div class="module-card-desc">Understand what trading means, the different types of traders, and how profit and loss actually work in financial markets.</div>
+      </div>
+      <div class="module-check">✓</div>
+    </a>
 
-<h3>Risk Management</h3>
+    <a class="module-card" href="modules/basics-2.html" data-module-card="basics-2">
+      <div class="module-num">2</div>
+      <div class="module-card-body">
+        <div class="module-card-title">How Markets Work</div>
+        <div class="module-card-desc">Discover how buyers and sellers interact, what exchanges do, how orders are matched, and what drives price movements.</div>
+      </div>
+      <div class="module-check">✓</div>
+    </a>
 
-<p>Managing losses smartly.</p>
+    <a class="module-card" href="modules/basics-3.html" data-module-card="basics-3">
+      <div class="module-num">3</div>
+      <div class="module-card-body">
+        <div class="module-card-title">Risk Management</div>
+        <div class="module-card-desc">The most important skill in trading. Learn position sizing, stop-losses, risk/reward ratios, and how to protect your capital.</div>
+      </div>
+      <div class="module-check">✓</div>
+    </a>
 
-</div>
-
-</div>
-
-<img class="fade" src="https://images.unsplash.com/photo-1642790106117-e829e14a795f">
+  </div>
 
 </div>
 
 <footer>
-
-Trading Fundamentals
-
+  TradeLearn &bull; <a href="index.html">Home</a> &bull; <a href="contact.html">Contact</a><br>
+  Created by Sidharth Praveen
 </footer>
 
 <script src="script.js"></script>
-
+<script src="js/progress.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    applyModuleCardState();
+  });
+</script>
 </body>
-
 </html>

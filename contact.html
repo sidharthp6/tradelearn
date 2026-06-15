@@ -1,93 +1,142 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-E32NQWVJEC"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-E32NQWVJEC"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-E32NQWVJEC');
+  </script>
 
-  gtag('config', 'G-E32NQWVJEC');
-</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Get in touch with the TradeLearn creator, Sidharth Praveen. Send a message or connect via email or GitHub.">
+  <meta property="og:title" content="Contact — TradeLearn">
+  <meta property="og:description" content="Get in touch with TradeLearn creator Sidharth Praveen.">
+  <meta property="og:type" content="website">
 
-<title>Contact</title>
-
-<link rel="stylesheet" href="style.css">
-
+  <title>Contact — TradeLearn</title>
+  <link rel="icon" href="logo.png">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
+<!-- NAV -->
 <nav class="nav">
+  <a href="index.html" class="logo">
+    <img src="logo.png" alt="TradeLearn logo">
+    <div class="logo-text">
+      <span>TradeLearn</span>
+      <small>by Sidharth Praveen</small>
+    </div>
+  </a>
 
-<div class="logo">
+  <div class="menu">
+    <a href="index.html">Home</a>
+    <a href="markets.html">Markets</a>
+    <a href="basics.html">Basics</a>
+    <a href="strategies.html">Strategies</a>
+    <a href="contact.html">Contact</a>
+  </div>
 
-<img src="logo.png">
-<span>TradeLearn</span>
-
-</div>
-
-<div class="menu">
-
-<a href="index.html">Home</a>
-<a href="markets.html">Markets</a>
-<a href="basics.html">Basics</a>
-<a href="strategies.html">Strategies</a>
-<a href="contact.html">Contact</a>
-
-</div>
-
+  <button class="hamburger" id="hamburger" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
 </nav>
 
-<header>
+<nav class="mobile-menu" id="mobile-menu">
+  <a href="index.html">Home</a>
+  <a href="markets.html">Markets</a>
+  <a href="basics.html">Basics</a>
+  <a href="strategies.html">Strategies</a>
+  <a href="contact.html">Contact</a>
+</nav>
 
-<h1>Contact</h1>
+<!-- PAGE HEADER -->
+<div class="page-header">
+  <h1>Get in Touch</h1>
+  <p>Questions about the course, feedback, or just want to say hello — send a message.</p>
+</div>
 
-</header>
+<!-- CONTACT LAYOUT -->
+<div class="contact-layout">
 
-<div class="container">
+  <!-- LEFT: Info -->
+  <div class="contact-info">
+    <h3>Sidharth Praveen</h3>
+    <p style="color:var(--text-muted);font-size:14px;margin:0 0 20px;">Creator of TradeLearn — an interactive platform for learning trading and financial markets.</p>
 
-<h2>Your Details</h2>
+    <div class="contact-item">
+      <div class="contact-icon">✉️</div>
+      <div>
+        <div style="font-size:12px;color:var(--text-muted);margin-bottom:2px;">Email</div>
+        <a href="mailto:sidharth6p@gmail.com" style="color:var(--accent);text-decoration:none;">sidharth6p@gmail.com</a>
+      </div>
+    </div>
 
-<p>Name: Sidharth Praveen</p>
+    <div class="contact-item">
+      <div class="contact-icon">💻</div>
+      <div>
+        <div style="font-size:12px;color:var(--text-muted);margin-bottom:2px;">GitHub</div>
+        <a href="https://github.com/sidharthp6" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">github.com/sidharthp6</a>
+      </div>
+    </div>
 
-<p>Email: sidharth6p@gmail.com</p>
+    <div class="contact-item">
+      <div class="contact-icon">🌐</div>
+      <div>
+        <div style="font-size:12px;color:var(--text-muted);margin-bottom:2px;">TradeLearn</div>
+        <a href="https://sidharthp6.github.io/tradelearn/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">sidharthp6.github.io/tradelearn</a>
+      </div>
+    </div>
 
-<p>Phone: 8010541812</p>
+    <div style="margin-top:28px;padding:16px;background:rgba(56,189,248,0.06);border:1px solid rgba(56,189,248,0.15);border-radius:12px;">
+      <div style="font-size:13px;color:var(--text-muted);line-height:1.6;">
+        TradeLearn is an educational project. Nothing on this platform constitutes financial advice. Always do your own research before making any investment or trading decisions.
+      </div>
+    </div>
+  </div>
 
-<br>
+  <!-- RIGHT: Form -->
+  <div class="contact-form">
+    <form id="contact-form" onsubmit="return validateForm(event)">
+      <div class="form-group">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" placeholder="Jane Smith" required>
+      </div>
 
-<h2>Send Message</h2>
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="jane@example.com" required>
+      </div>
 
-<form onsubmit="return validateForm()">
+      <div class="form-group">
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" placeholder="Question about the course">
+      </div>
 
-<input type="text" placeholder="Name" required>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" placeholder="Write your message here..." required></textarea>
+      </div>
 
-<input type="email" id="email" placeholder="Email">
+      <button type="submit">Send Message</button>
+    </form>
 
-<textarea placeholder="Message"></textarea>
-
-<button type="submit">
-
-Submit
-
-</button>
-
-</form>
+    <div class="form-success" id="form-success">
+      ✓ Message received! I'll get back to you at the email you provided.
+    </div>
+  </div>
 
 </div>
 
 <footer>
-
-TradeLearn Project
-
+  TradeLearn &bull; <a href="index.html">Home</a> &bull; <a href="basics.html">Start Learning</a><br>
+  Created by Sidharth Praveen
 </footer>
 
 <script src="script.js"></script>
-
 </body>
-
 </html>
